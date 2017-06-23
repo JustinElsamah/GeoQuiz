@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/justinelsemah/GeoQuiz/app/build/intermediates/res/merged/debug/drawable-xxhdpi/arrow_right.png",
+        "source": "/Users/justinelsemah/GeoQuiz/app/src/main/res/drawable-xxhdpi/arrow_right.png"
+    },
+    {
+        "merged": "/Users/justinelsemah/GeoQuiz/app/build/intermediates/res/merged/debug/drawable-xxhdpi/arrow_left.png",
+        "source": "/Users/justinelsemah/GeoQuiz/app/src/main/res/drawable-xxhdpi/arrow_left.png"
+    }
+]
