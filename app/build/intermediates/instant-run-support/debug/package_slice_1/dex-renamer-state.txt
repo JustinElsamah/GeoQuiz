@@ -1,4 +1,4 @@
-#Thu Jun 22 21:08:13 EDT 2017
+#Mon Jun 26 12:47:54 EDT 2017
 base.0=/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1
 renamed.0=classes.dex
 file.0=/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex

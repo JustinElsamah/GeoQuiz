@@ -6,8 +6,10 @@ package com.bignerdranch.android.geoquiz;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,9 +20,11 @@ public class QuizActivity extends AppCompatActivity {
 
     private Button mTrueButton;
     private Button mFalseButton;
-    private Button mPrevButton;
-    private Button mNextButton;
+    private ImageButton mPrevButton;
+    private ImageButton mNextButton;
     private TextView mQuestionTextView;
+    private static final String TAG = "QuizActivity";
+    private static final String KEY_INDEX = "index";
     Question[] mQuestionBank = new Question[]{
             new Question(R.string.question_oceans, true),
             new Question(R.string.question_mideast, false),
@@ -30,38 +34,54 @@ public class QuizActivity extends AppCompatActivity {
     };
     private int mCurrentIndex = 0;
     private int mCurrentQuestionId;
+    private double mCorrectAnswers = 0;
+    private double mNumOfQuestions = mQuestionBank.length;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate(Bundle) called");
+        if(savedInstanceState != null){
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX);
+        }
         setContentView(R.layout.activity_quiz);
-        int index = 0;
+
         mTrueButton = (Button) findViewById(R.id.true_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                mQuestionBank[mCurrentIndex].setEnabled(false);
+                updateQuestionButtons();
                 checkAnswer(true);
+
             }
         });
+
         mFalseButton = (Button) findViewById(R.id.false_button);
         mFalseButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
+                mQuestionBank[mCurrentIndex].setEnabled(false);
+                updateQuestionButtons();
                 checkAnswer(false);
             }
         });
-        mPrevButton = (Button) findViewById(R.id.prev_button);
+        mPrevButton = (ImageButton) findViewById(R.id.prev_button);
         mPrevButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mCurrentIndex  = (mCurrentIndex - 1) % mQuestionBank.length;
+                mCurrentIndex = (mCurrentIndex != 0) ?  (mCurrentIndex - 1) : mQuestionBank.length-1;
                 updateTextView();
+                updateQuestionButtons();
             }
         });
-        mNextButton = (Button) findViewById(R.id.next_button);
+
+        mNextButton = (ImageButton) findViewById(R.id.next_button);
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateTextView();
+                updateQuestionButtons();
             }
         });
 
@@ -72,24 +92,72 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v){
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateTextView();
+                updateQuestionButtons();
             }
 
         });
-        updateTextView();
 
+        updateTextView();
     }
 
     public void checkAnswer(boolean guess) {
         if (mQuestionBank[mCurrentIndex].isAnswerTrue() == guess) {
-            Toast.makeText(QuizActivity.this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
+            mCorrectAnswers++;
+            if(!checkCompleted()){
+                Toast.makeText(QuizActivity.this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore(), Toast.LENGTH_LONG).show();
+            }
         } else {
-            Toast.makeText(QuizActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
+            if(!checkCompleted()){
+                Toast.makeText(QuizActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore(), Toast.LENGTH_LONG).show();
+            }
         }
     }
 
     public void updateTextView() {
-
         mCurrentQuestionId = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(mCurrentQuestionId);
     }
+
+    public boolean checkCompleted(){
+        for(Question question:mQuestionBank) {
+            if (question.isEnabled() == true) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void updateQuestionButtons(){
+        if(mQuestionBank[mCurrentIndex].isEnabled() == false){
+            mTrueButton.setEnabled(false);
+            mFalseButton.setEnabled(false);
+        }else{
+            mTrueButton.setEnabled(true);
+            mFalseButton.setEnabled(true);
+        }
+    }
+
+
+    public String calculateScore(){
+        if(mCorrectAnswers == 0){
+            return "0";
+        }else {
+            return Double.toString(mCorrectAnswers / mNumOfQuestions * 100);
+        }
+    }
+
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+        Log.i(TAG, "onSaveInstance");
+        savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
+    }
+
+
+
 }

@@ -1,4 +1,4 @@
-#Thu Jun 22 20:50:30 EDT 2017
+#Mon Jun 26 10:02:34 EDT 2017
 base.0=/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f39d29b1c0ab2b59de32e7082da26b94d67e6531
 renamed.1=classes2.dex
 renamed.0=classes.dex

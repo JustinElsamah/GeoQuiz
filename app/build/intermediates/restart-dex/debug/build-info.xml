@@ -6,19 +6,19 @@
     density="560dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1498180092815"
+    timestamp="1498495674347"
     token="1995031959828019497"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="45" />
+        duration="74" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="2" />
+        duration="8" />
     <task
         name="verifier"
         duration="0" />
@@ -32,16 +32,13 @@
 
     <build
         build-mode="FULL"
-        timestamp="1498176499833"
+        timestamp="1498487755093"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/justinelsemah/GeoQuiz/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/Users/justinelsemah/GeoQuiz/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/justinelsemah/GeoQuiz/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
-        <artifact
-            location="/Users/justinelsemah/GeoQuiz/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/justinelsemah/GeoQuiz/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/Users/justinelsemah/GeoQuiz/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -70,18 +67,13 @@
         <artifact
             location="/Users/justinelsemah/GeoQuiz/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1498178900280"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/justinelsemah/GeoQuiz/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
+            location="/Users/justinelsemah/GeoQuiz/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1498180079381"
+        timestamp="1498493780735"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/justinelsemah/GeoQuiz/app/build/outputs/apk/app-debug.apk"
@@ -89,7 +81,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1498180092815"
+        timestamp="1498495674347"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/justinelsemah/GeoQuiz/app/build/intermediates/split-apk/debug/slices/slice_1.apk"

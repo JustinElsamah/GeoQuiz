@@ -8,10 +8,12 @@ public class Question {
 
     private int mTextResId;
     private boolean mAnswerTrue;
+    private boolean mEnabled;
 
     public Question(int textResId, boolean answerTrue){
         this.mTextResId = textResId;
         this.mAnswerTrue = answerTrue;
+        this.mEnabled = true;
     }
 
     public int getTextResId() {
@@ -28,5 +30,13 @@ public class Question {
 
     public void setAnswerTrue(boolean answerTrue) {
         mAnswerTrue = answerTrue;
+    }
+
+    public boolean isEnabled() {
+        return mEnabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        mEnabled = enabled;
     }
 }
