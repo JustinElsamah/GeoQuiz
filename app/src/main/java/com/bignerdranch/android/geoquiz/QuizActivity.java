@@ -106,13 +106,13 @@ public class QuizActivity extends AppCompatActivity {
             if(!checkCompleted()){
                 Toast.makeText(QuizActivity.this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
             }else{
-                Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore(), Toast.LENGTH_LONG).show();
+                Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore() + "%", Toast.LENGTH_LONG).show();
             }
         } else {
             if(!checkCompleted()){
                 Toast.makeText(QuizActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
             }else{
-                Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore(), Toast.LENGTH_LONG).show();
+                Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore() + "%", Toast.LENGTH_LONG).show();
             }
         }
     }
