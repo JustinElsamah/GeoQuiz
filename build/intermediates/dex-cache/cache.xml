@@ -2,22 +2,130 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/justinelsemah/GeoQuiz/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/justinelsemah/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="17f4e4c060d215cbd89e736f98597b3e6cbfd3c0">
-        <dex dex="/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f39d29b1c0ab2b59de32e7082da26b94d67e6531/classes.dex" />
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_3703b904e62210ec6fd9d0ba2a9e59e2539f1093.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/justinelsemah/GeoQuiz/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bef9045bffa9fec723b0f6a5fec0b58269804722/classes.dex" />
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_914b37b2728e13739c341f4d97727e95970e3b04/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/.android/build-cache/f7227edf84af566a81b9ce020a30a6aeaacebb82/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/classes_e9a8c675724923eb8235418f92fa48b20df6a672.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/.android/build-cache/65c2277cbdfcd60b164066a83acfb11c10c30daa/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/classes_71da2a19dab22c5324a96cd4eff000ddf396bea7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/.android/build-cache/c106b5dc680307cc61286f505f468fcd5fb233f4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/classes_04edf5364fec56a516fcfc0a5578dc643cb8ff34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/.android/build-cache/649e0ec9e5eecf9cccedd5f59a3f56a1c8d95b0c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/classes_ab04f583f6b421fc3f2b2209c1935b2ccf4613ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/.android/build-cache/420a14e545ae1528c5e8cd3fb52cebeab6816b0b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/classes_ee27c28481e2e0ae4dd9cc9b30e45933d1d3100d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="199d9b10aadffb1e4c4436380c37d8c4dbf390a9">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4e0bc28a7c9baf506583cf244a6d27671e1625d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/.android/build-cache/4fd83e25caec1c4dc6bd4d81b93ba597059b67d0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/classes_f3ede2fe77506702ceab6142e8a4eda1065cd0cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/.android/build-cache/dce06e2e32cf4a6fd83359df5c9abb2135e6b0f2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/classes_be2658dec6b505f53a614acaa5d71737620d74c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_80bae5218db457381b823e9d32f0b866a4d632c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/.android/build-cache/6c9b9e7057ea021e7446170972c1f7e24d4fe054/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/classes_9c4aa4d0921ad479a4a16425d267bb3c08d7f4aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/.android/build-cache/96215923d724b376e93b967691488423e5d999b3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/classes_d57b2d8df3a582e37e9ec0a7aeea21623ac15e75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justinelsemah/.android/build-cache/cd940bc5255c73b72ab73c80cb0d8f1f8da99ddd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/pre-dexed/debug/classes_5b5be9238c309f36cde93be2128785b3f8ee69b6.jar" />
     </item>
 
 </items>

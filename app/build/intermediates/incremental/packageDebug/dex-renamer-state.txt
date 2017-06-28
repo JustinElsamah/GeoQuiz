@@ -1,7 +1,7 @@
-#Wed Jun 28 11:36:26 EDT 2017
-base.0=/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f39d29b1c0ab2b59de32e7082da26b94d67e6531
+#Wed Jun 28 14:05:37 EDT 2017
+base.0=/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4e0bc28a7c9baf506583cf244a6d27671e1625d4
 renamed.1=classes.dex
 renamed.0=classes2.dex
-file.1=/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bef9045bffa9fec723b0f6a5fec0b58269804722/classes.dex
-base.1=/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bef9045bffa9fec723b0f6a5fec0b58269804722
-file.0=/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f39d29b1c0ab2b59de32e7082da26b94d67e6531/classes.dex
+file.1=/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_914b37b2728e13739c341f4d97727e95970e3b04/classes.dex
+base.1=/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_914b37b2728e13739c341f4d97727e95970e3b04
+file.0=/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4e0bc28a7c9baf506583cf244a6d27671e1625d4/classes.dex

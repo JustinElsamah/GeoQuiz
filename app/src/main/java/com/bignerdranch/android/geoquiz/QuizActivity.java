@@ -94,7 +94,6 @@ public class QuizActivity extends AppCompatActivity {
 
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         mQuestionTextView.setOnClickListener(new View.OnClickListener(){
-
             @Override
             public void onClick(View v){
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
@@ -124,7 +123,7 @@ public class QuizActivity extends AppCompatActivity {
             return;
         }
 
-        if(resultCode == REQUEST_CODE_CHEAT){
+        if(requestCode == REQUEST_CODE_CHEAT){
             if(data == null){
                 return;
             }
@@ -133,20 +132,22 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void checkAnswer(boolean guess) {
-
-
-        if (mQuestionBank[mCurrentIndex].isAnswerTrue() == guess) {
-            mCorrectAnswers++;
-            if(!checkCompleted()){
-                Toast.makeText(QuizActivity.this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
-            }else{
-                Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore() + "%", Toast.LENGTH_LONG).show();
-            }
-        } else {
-            if(!checkCompleted()){
-                Toast.makeText(QuizActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
-            }else{
-                Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore() + "%", Toast.LENGTH_LONG).show();
+        if(mIsCheater){
+            Toast.makeText(QuizActivity.this, R.string.judgement_toast, Toast.LENGTH_SHORT).show();
+        }else {
+            if (mQuestionBank[mCurrentIndex].isAnswerTrue() == guess) {
+                mCorrectAnswers++;
+                if (!checkCompleted()) {
+                    Toast.makeText(QuizActivity.this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore() + "%", Toast.LENGTH_LONG).show();
+                }
+            } else {
+                if (!checkCompleted()) {
+                    Toast.makeText(QuizActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore() + "%", Toast.LENGTH_LONG).show();
+                }
             }
         }
     }
@@ -175,7 +176,6 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
-
     public String calculateScore(){
         if(mCorrectAnswers == 0){
             return "0";
@@ -184,14 +184,11 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
-
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState){
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG, "onSaveInstance");
         savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
     }
-
-
 
 }
