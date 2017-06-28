@@ -26,6 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.bignerdranch.android.geoquiz.CheatActivity" >
+        </activity>
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

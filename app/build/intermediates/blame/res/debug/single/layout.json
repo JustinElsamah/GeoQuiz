@@ -84,6 +84,10 @@
         "source": "/Users/justinelsemah/.android/build-cache/f7227edf84af566a81b9ce020a30a6aeaacebb82/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "/Users/justinelsemah/GeoQuiz/app/build/intermediates/res/merged/debug/layout/activity_cheat.xml",
+        "source": "/Users/justinelsemah/GeoQuiz/app/src/main/res/layout/activity_cheat.xml"
+    },
+    {
         "merged": "/Users/justinelsemah/GeoQuiz/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
         "source": "/Users/justinelsemah/.android/build-cache/f7227edf84af566a81b9ce020a30a6aeaacebb82/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
