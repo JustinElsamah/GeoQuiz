@@ -28,6 +28,8 @@
         </activity>
         <activity android:name="com.bignerdranch.android.geoquiz.CheatActivity" >
         </activity>
+        <activity android:name="com.bignerdranch.android.geoquiz.CongratulationsActivity" >
+        </activity>
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

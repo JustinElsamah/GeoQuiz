@@ -8,15 +8,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -27,6 +23,7 @@ public class QuizActivity extends AppCompatActivity {
     private ImageButton mNextButton;
     private TextView mQuestionTextView;
     private static final int CHEAT_ACTIVITY_CODE = 0;
+    private static final int CONGRATULATIONS_ACTIVITY_CODE = 1;
     Question[] mQuestionBank = new Question[]{
             new Question(R.string.question_oceans, true),
             new Question(R.string.question_mideast, false),
@@ -54,7 +51,10 @@ public class QuizActivity extends AppCompatActivity {
                 mQuestionBank[mCurrentIndex].setEnabled(false);
                 updateQuestionButtons();
                 checkAnswer(true);
-
+                if(checkCompleted() == true){
+                    Intent intent = CongratulationsActivity.newIntent(QuizActivity.this, calculateScore());
+                    startActivityForResult(intent, CONGRATULATIONS_ACTIVITY_CODE);
+                }
             }
         });
 
@@ -65,6 +65,10 @@ public class QuizActivity extends AppCompatActivity {
                 mQuestionBank[mCurrentIndex].setEnabled(false);
                 updateQuestionButtons();
                 checkAnswer(false);
+                if(checkCompleted() == true){
+                    Intent intent = CongratulationsActivity.newIntent(QuizActivity.this, calculateScore());
+                    startActivityForResult(intent, CONGRATULATIONS_ACTIVITY_CODE);
+                }
             }
         });
         mPrevButton = (ImageButton) findViewById(R.id.prev_button);
@@ -99,7 +103,6 @@ public class QuizActivity extends AppCompatActivity {
                 updateTextView();
                 updateQuestionButtons();
             }
-
         });
 
         mCheatButton = (Button) findViewById(R.id.cheat_button);
@@ -128,6 +131,12 @@ public class QuizActivity extends AppCompatActivity {
             }
             mQuestionBank[mCurrentIndex].setCheatedON(CheatActivity.wasAnswerShown(data));
         }
+        if(requestCode == CONGRATULATIONS_ACTIVITY_CODE){
+            if(data == null){
+                return;
+            }
+            Toast.makeText(QuizActivity.this, Boolean.toString(CongratulationsActivity.wasButtonPressed(data)), Toast.LENGTH_LONG).show();
+        }
     }
 
     public void checkAnswer(boolean guess) {
@@ -145,7 +154,6 @@ public class QuizActivity extends AppCompatActivity {
                 Toast.makeText(QuizActivity.this, ResId, Toast.LENGTH_SHORT).show();
                 return;
             }
-            Toast.makeText(QuizActivity.this, "You got a score of " + calculateScore() + "%", Toast.LENGTH_LONG).show();
         }
     }
 

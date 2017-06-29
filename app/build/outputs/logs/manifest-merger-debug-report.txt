@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml:3:11-53
 		INJECTED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifes
 		INJECTED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml:5:5-21:19
+ADDED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml:5:5-23:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/justinelsemah/.android/build-cache/f7227edf84af566a81b9ce020a30a6aeaacebb82/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/justinelsemah/.android/build-cache/65c2277cbdfcd60b164066a83acfb11c10c30daa/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/justinelsemah/.android/build-cache/96215923d724b376e93b967691488423e5d999b3/output/AndroidManifest.xml:29:5-20
@@ -55,6 +55,10 @@ activity#com.bignerdranch.android.geoquiz.CheatActivity
 ADDED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml:19:9-20:20
 	android:name
 		ADDED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml:19:19-48
+activity#com.bignerdranch.android.geoquiz.CongratulationsActivity
+ADDED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml:21:9-22:20
+	android:name
+		ADDED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml:21:19-58
 uses-sdk
 INJECTED from /Users/justinelsemah/Justins_Apps/GeoQuiz/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/justinelsemah/.android/build-cache/f7227edf84af566a81b9ce020a30a6aeaacebb82/output/AndroidManifest.xml:21:5-23:78

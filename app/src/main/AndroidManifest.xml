@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".CheatActivity">
         </activity>
+        <activity android:name=".CongratulationsActivity">
+        </activity>
     </application>
 
 </manifest>
