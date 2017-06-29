@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/justinelsemah/GeoQuiz/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/justinelsemah/.android/build-cache/f7227edf84af566a81b9ce020a30a6aeaacebb82/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/justinelsemah/.android/build-cache/f7227edf84af566a81b9ce020a30a6aeaacebb82/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "/Users/justinelsemah/GeoQuiz/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/justinelsemah/.android/build-cache/f7227edf84af566a81b9ce020a30a6aeaacebb82/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/justinelsemah/.android/build-cache/f7227edf84af566a81b9ce020a30a6aeaacebb82/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     }
 ]

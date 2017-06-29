@@ -9,11 +9,13 @@ public class Question {
     private int mTextResId;
     private boolean mAnswerTrue;
     private boolean mEnabled;
+    private boolean mCheatedON;
 
     public Question(int textResId, boolean answerTrue){
         this.mTextResId = textResId;
         this.mAnswerTrue = answerTrue;
         this.mEnabled = true;
+        this.mCheatedON = false;
     }
 
     public int getTextResId() {
@@ -38,5 +40,13 @@ public class Question {
 
     public void setEnabled(boolean enabled) {
         mEnabled = enabled;
+    }
+
+    public boolean isCheatedON() {
+        return mCheatedON;
+    }
+
+    public void setCheatedON(boolean cheatedON) {
+        mCheatedON = cheatedON;
     }
 }

@@ -17,26 +17,38 @@ public class CheatActivity extends AppCompatActivity {
     private boolean mAnswerTrue;
     private TextView mAnswerTextView;
     private Button mShowAnswerButton;
+    private boolean mIsCheater;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cheat);
         mAnswerTrue = getIntent().getBooleanExtra(EXTRA_ANSWER_IS_TRUE, false);
-
+        mIsCheater = false;
         mAnswerTextView = (TextView)findViewById(R.id.answer_text_view);
+        if(savedInstanceState != null){
+            mIsCheater = savedInstanceState.getBoolean("HasCheated");
+        }
+        if(mIsCheater == true){
+            cheat();
+        }
         mShowAnswerButton = (Button)findViewById(R.id.show_answer_button);
         mShowAnswerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(mAnswerTrue){
-                    mAnswerTextView.setText(R.string.true_button);
-                }else{
-                    mAnswerTextView.setText(R.string.false_button);
-                }
-
+               cheat();
             }
         });
+    }
+
+    public void cheat(){
+        if(mAnswerTrue){
+            mAnswerTextView.setText(R.string.true_button);
+        }else{
+            mAnswerTextView.setText(R.string.false_button);
+        }
+        setAnswerShownResult(true);
+        mIsCheater = true;
     }
 
     public static Intent newIntent(Context packageContext, boolean answerIsTrue){
@@ -55,4 +67,9 @@ public class CheatActivity extends AppCompatActivity {
         return result.getBooleanExtra(EXTRA_ANSWER_SHOWN, false);
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putBoolean("HasCheated", mIsCheater);
+    }
 }

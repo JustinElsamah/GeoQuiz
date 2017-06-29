@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/justinelsemah/GeoQuiz/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="17f4e4c060d215cbd89e736f98597b3e6cbfd3c0">
-        <dex dex="/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f39d29b1c0ab2b59de32e7082da26b94d67e6531/classes.dex" />
+        sha1="fd3ab3ff5f09f66657bb97ae238ba51c32cd571e">
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4e0bc28a7c9baf506583cf244a6d27671e1625d4/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/justinelsemah/GeoQuiz/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/justinelsemah/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bef9045bffa9fec723b0f6a5fec0b58269804722/classes.dex" />
+        <dex dex="/Users/justinelsemah/Justins_Apps/GeoQuiz/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_914b37b2728e13739c341f4d97727e95970e3b04/classes.dex" />
     </item>
 
 </items>
